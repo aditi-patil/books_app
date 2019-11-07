@@ -5,20 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version : ruby 2.6.3
 
-* System dependencies
+* Rails Version: Rails 6.0
 
-* Configuration
+* Database: MongoDB + Elastic search
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Frontend: ReactJS
