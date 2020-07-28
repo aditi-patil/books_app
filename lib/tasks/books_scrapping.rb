@@ -24,8 +24,3 @@ collection = client[:books]
 			}
 	result = collection.insert_one(params)
 end
-
-# book_images = doc.search('//img').each do |p|
-	# binding.pry
-# 	puts p
-# end

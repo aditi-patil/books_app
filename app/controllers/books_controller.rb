@@ -4,16 +4,15 @@ class BooksController < ApplicationController
   # GET /books
   # GET /books.json
   def index
-  	# Book.create_book_data
     if params[:limit].present? && params[:offset].present?
-	  @books = Book.limit(params[:limit]).offset(params[:offset])
-	  render json: { books: @books }
-	elsif params[:search].present?
-	  @books = Book.search(params[:search])
-	  render json: { books: @books.records }
-	else
-	  @books = Book.limit(20)
-	end
+      @books = Book.limit(params[:limit]).offset(params[:offset])
+      render json: { books: @books }
+    elsif params[:search].present?
+      @books = Book.search(params[:search])
+      render json: { books: @books.records }
+    else
+      @books = Book.limit(20)
+    end
   end
 
   # GET /books/1
